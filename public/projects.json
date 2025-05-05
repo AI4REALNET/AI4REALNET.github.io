@@ -1,0 +1,53 @@
+[
+  {
+    "project_name": "Energy Management System",
+    "project_topic": "energy-management",
+    "project_area": "Energy",
+    "project_description": "Advanced energy management systems for smart grids and renewable energy integration.",
+    "project_url": "https://example.com/energy-management",
+    "project_website": "https://energy.inesctec.pt",
+    "top_repositories": [],
+    "total_stars": 0,
+    "total_repositories": 0,
+    "project_tags": [],
+    "last_updated": "2025-05-05T10:32:12.066Z"
+  },
+  {
+    "project_name": "Machine Learning Research",
+    "project_topic": "machine-learning",
+    "project_area": "Artificial Intelligence",
+    "project_description": "Cutting-edge machine learning research and applications for industrial use cases.",
+    "project_url": "https://example.com/ml-research",
+    "project_website": "https://ai.inesctec.pt",
+    "top_repositories": [],
+    "total_stars": 0,
+    "total_repositories": 0,
+    "project_tags": [],
+    "last_updated": "2025-05-05T10:32:12.102Z"
+  },
+  {
+    "project_name": "IoT Sensors Network",
+    "project_topic": "iot-sensors",
+    "project_area": "Internet of Things",
+    "project_description": "Advanced sensor networks for IoT applications and smart environments.",
+    "project_url": "https://example.com/iot-sensors",
+    "top_repositories": [],
+    "total_stars": 0,
+    "total_repositories": 0,
+    "project_tags": [],
+    "last_updated": "2025-05-05T10:32:12.153Z"
+  },
+  {
+    "project_name": "Autonomous Robotics",
+    "project_topic": "robotics",
+    "project_area": "Robotics",
+    "project_description": "Research on autonomous robotic systems for industry and healthcare.",
+    "project_url": "https://example.com/robotics",
+    "project_website": "https://robotics.inesctec.pt",
+    "top_repositories": [],
+    "total_stars": 0,
+    "total_repositories": 0,
+    "project_tags": [],
+    "last_updated": "2025-05-05T10:32:12.191Z"
+  }
+]
