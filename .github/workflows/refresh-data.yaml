@@ -30,6 +30,8 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git diff --exit-code || (git add public/projects.json && git commit -m 'Update projects.json with latest GitHub data' && git push)
+        git diff --exit-code || (git add public/projects.json && git commit -m 'Update projects.json with latest GitHub data' && \
+        git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/AI4REALNET/.github.io.git && \
+        git push)
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
