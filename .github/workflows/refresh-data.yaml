@@ -1,43 +1,35 @@
-name: Refresh GitHub Data
+name: Update Projects JSON
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:     # Allow manual triggers
-  push:
-    paths:
-      - 'src/config.js'  # Run when config is updated
+    - cron: '0 0 * * *'
 
 jobs:
-  refresh-data:
+  update-json:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-        
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          cache: 'npm'
-          
-      - name: Install dependencies
-        run: npm ci
-        
-      - name: Fetch GitHub data
-        run: npm run fetch-data
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          
-      - name: Commit updated data
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add public/projects.json
-          git commit -m "Update projects data" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Update projects.json
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: node scripts/fetch-github-data.js
+
+    - name: Commit and push changes if needed
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git diff --exit-code || (git add public/projects.json && git commit -m 'Update projects.json with latest GitHub data' && git push)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
