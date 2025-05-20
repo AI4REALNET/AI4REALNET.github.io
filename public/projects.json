@@ -6,11 +6,27 @@
     "project_description": "Advanced energy management systems for smart grids and renewable energy integration.",
     "project_url": "https://example.com/energy-management",
     "project_website": "https://energy.inesctec.pt",
-    "top_repositories": [],
+    "top_repositories": [
+      {
+        "name": "flatland-blackbox",
+        "url": "https://github.com/AI4REALNET/flatland-blackbox",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "is_fork": false,
+        "topics": [
+          "flatland"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-07T14:58:01Z"
+      }
+    ],
     "total_stars": 0,
-    "total_repositories": 0,
-    "project_tags": [],
-    "last_updated": "2025-05-05T10:32:12.066Z"
+    "total_repositories": 1,
+    "project_tags": [
+      "flatland"
+    ],
+    "last_updated": "2025-05-20T13:19:52.997Z"
   },
   {
     "project_name": "Grid2Op",
@@ -19,11 +35,27 @@
     "project_description": "Cutting-edge machine learning research and applications for industrial use cases.",
     "project_url": "https://example.com/ml-research",
     "project_website": "https://ai.inesctec.pt",
-    "top_repositories": [],
+    "top_repositories": [
+      {
+        "name": "grid2op-scenario",
+        "url": "https://github.com/AI4REALNET/grid2op-scenario",
+        "description": null,
+        "stars": 0,
+        "forks": 1,
+        "is_fork": false,
+        "topics": [
+          "grid2op"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-20T09:59:58Z"
+      }
+    ],
     "total_stars": 0,
-    "total_repositories": 0,
-    "project_tags": [],
-    "last_updated": "2025-05-05T10:32:12.102Z"
+    "total_repositories": 1,
+    "project_tags": [
+      "grid2op"
+    ],
+    "last_updated": "2025-05-20T13:19:53.793Z"
   },
   {
     "project_name": "BlueSky",
@@ -35,7 +67,7 @@
     "total_stars": 0,
     "total_repositories": 0,
     "project_tags": [],
-    "last_updated": "2025-05-05T10:32:12.153Z"
+    "last_updated": "2025-05-20T13:19:54.072Z"
   },
   {
     "project_name": "Interactive AI",
@@ -48,19 +80,6 @@
     "total_stars": 0,
     "total_repositories": 0,
     "project_tags": [],
-    "last_updated": "2025-05-05T10:32:12.191Z"
-  },
-  {
-    "project_name": "Human Acessment Module",
-    "project_topic": "human-accessment-module",
-    "project_area": "Robotics",
-    "project_description": "Research on autonomous robotic systems for industry and healthcare.",
-    "project_url": "https://example.com/robotics",
-    "project_website": "https://robotics.inesctec.pt",
-    "top_repositories": [],
-    "total_stars": 0,
-    "total_repositories": 0,
-    "project_tags": [],
-    "last_updated": "2025-05-05T10:32:12.191Z"
+    "last_updated": "2025-05-20T13:19:54.355Z"
   }
 ]
