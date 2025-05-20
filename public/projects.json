@@ -26,7 +26,7 @@
     "project_tags": [
       "flatland"
     ],
-    "last_updated": "2025-05-20T13:19:52.997Z"
+    "last_updated": "2025-05-20T13:36:48.463Z"
   },
   {
     "project_name": "Grid2Op",
@@ -55,7 +55,7 @@
     "project_tags": [
       "grid2op"
     ],
-    "last_updated": "2025-05-20T13:19:53.793Z"
+    "last_updated": "2025-05-20T13:36:49.033Z"
   },
   {
     "project_name": "BlueSky",
@@ -63,11 +63,12 @@
     "project_area": "Internet of Things",
     "project_description": "Advanced sensor networks for IoT applications and smart environments.",
     "project_url": "https://example.com/iot-sensors",
+    "project_website": "https://ai.inesctec.pt",
     "top_repositories": [],
     "total_stars": 0,
     "total_repositories": 0,
     "project_tags": [],
-    "last_updated": "2025-05-20T13:19:54.072Z"
+    "last_updated": "2025-05-20T13:36:49.222Z"
   },
   {
     "project_name": "Interactive AI",
@@ -80,6 +81,6 @@
     "total_stars": 0,
     "total_repositories": 0,
     "project_tags": [],
-    "last_updated": "2025-05-20T13:19:54.355Z"
+    "last_updated": "2025-05-20T13:36:49.420Z"
   }
 ]
