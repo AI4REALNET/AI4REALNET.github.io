@@ -1,0 +1,143 @@
+[
+  {
+    "project_name": "Flatland",
+    "project_topic": "flatland",
+    "project_area": "Energy",
+    "project_description": "Advanced energy management systems for smart grids and renewable energy integration.",
+    "project_url": "https://example.com/energy-management",
+    "project_website": "https://energy.inesctec.pt",
+    "top_repositories": [
+      {
+        "name": "flatland-rl",
+        "url": "https://github.com/AI4REALNET/flatland-rl",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "flatland"
+        ]
+      },
+      {
+        "name": "flatland-book",
+        "url": "https://github.com/AI4REALNET/flatland-book",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "flatland"
+        ]
+      },
+      {
+        "name": "flatland-scenarios",
+        "url": "https://github.com/AI4REALNET/flatland-scenarios",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "flatland"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 3,
+    "project_tags": [
+      "flatland"
+    ]
+  },
+  {
+    "project_name": "Grid2Op",
+    "project_topic": "grid2op",
+    "project_area": "Artificial Intelligence",
+    "project_description": "Cutting-edge machine learning research and applications for industrial use cases.",
+    "project_url": "https://example.com/ml-research",
+    "project_website": "https://ai.inesctec.pt",
+    "top_repositories": [
+      {
+        "name": "pypowsybl2grid",
+        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "grid2op"
+        ]
+      },
+      {
+        "name": "grid2op",
+        "url": "https://github.com/AI4REALNET/grid2op",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "grid2op"
+        ]
+      },
+      {
+        "name": "grid2op-scenario",
+        "url": "https://github.com/AI4REALNET/grid2op-scenario",
+        "stars": 0,
+        "is_fork": false,
+        "topics": [
+          "grid2op"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 3,
+    "project_tags": [
+      "grid2op"
+    ]
+  },
+  {
+    "project_name": "BlueSky",
+    "project_topic": "bluesky",
+    "project_area": "Internet of Things",
+    "project_description": "Advanced sensor networks for IoT applications and smart environments.",
+    "project_url": "https://example.com/iot-sensors",
+    "project_website": "https://ai.inesctec.pt",
+    "top_repositories": [
+      {
+        "name": "bluesky",
+        "url": "https://github.com/AI4REALNET/bluesky",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "bluesky"
+        ]
+      },
+      {
+        "name": "bluesky-gym",
+        "url": "https://github.com/AI4REALNET/bluesky-gym",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "bluesky"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 2,
+    "project_tags": [
+      "bluesky"
+    ]
+  },
+  {
+    "project_name": "Interactive AI",
+    "project_topic": "interactive-ai",
+    "project_area": "Robotics",
+    "project_description": "Research on autonomous robotic systems for industry and healthcare.",
+    "project_url": "https://example.com/robotics",
+    "project_website": "https://robotics.inesctec.pt",
+    "top_repositories": [
+      {
+        "name": "InteractiveAI",
+        "url": "https://github.com/AI4REALNET/InteractiveAI",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "interactive-ai"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "interactive-ai"
+    ]
+  }
+]
