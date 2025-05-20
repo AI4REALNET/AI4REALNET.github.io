@@ -11,15 +11,15 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fetch from 'node-fetch';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import config from '../src/config.js';
 
 // Load environment variables
-dotenv.config();
-
-// Constants
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
+// Constants
 const OUTPUT_PATH = path.join(__dirname, '../public/projects.json');
 
 // GitHub API URLs
@@ -78,20 +78,23 @@ async function getTopRepositories(org, topic, limit = 3) {
   try {
     while (true) {
       const params = new URLSearchParams({
-        'q': `org:${org} topic:${topic}`,
+        'q': `org:${org} topic:"${topic}"`,
+        'sort': 'stars',
+        'order': 'desc',
         'per_page': '100',
         'page': page.toString()
       });
       
       const headers = {
         'Accept': 'application/vnd.github.v3+json',
-        'Authorization': `token ${GITHUB_TOKEN}`
+        'Authorization': `Bearer ${GITHUB_TOKEN}`
       };
       
       const response = await fetch(`${GITHUB_API_SEARCH_URL}?${params}`, { headers });
       
       if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+        const errorData = await response.json();
+        throw new Error(`HTTP error! Status: ${response.status}, Message: ${JSON.stringify(errorData)}`);
       }
       
       const data = await response.json();
