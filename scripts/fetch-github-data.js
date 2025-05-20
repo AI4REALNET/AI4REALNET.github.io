@@ -65,79 +65,74 @@ async function getRepoTopics(owner, repo_name) {
 }
 
 /**
- * Get top repositories for a specific topic in an organization
+ * Get all repositories for an organization (paginated)
+ * @param {string} org - Organization name
+ * @returns {Promise<Array>} - List of repositories
+ */
+async function getAllOrgRepos(org) {
+  let repos = [];
+  let page = 1;
+  const per_page = 100;
+  while (true) {
+    const url = `https://api.github.com/orgs/${org}/repos?per_page=${per_page}&page=${page}`;
+    const headers = {
+      'Accept': 'application/vnd.github.v3+json',
+      'Authorization': `Bearer ${GITHUB_TOKEN}`
+    };
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+      throw new Error(`Failed to fetch repos: ${response.status}`);
+    }
+    const data = await response.json();
+    repos = repos.concat(data);
+    if (data.length < per_page) break;
+    page++;
+  }
+  return repos;
+}
+
+/**
+ * Get top repositories for a specific topic in an organization (using repo topics API)
  * @param {string} org - Organization name
  * @param {string} topic - Topic to search for
  * @param {number} limit - Maximum number of repos to return
  * @returns {Promise<Object>} - Repository data
  */
 async function getTopRepositories(org, topic, limit = 3) {
-  let all_repos = [];
-  let page = 1;
-  
   try {
-    while (true) {
-      const params = new URLSearchParams({
-        'q': `org:${org} topic:"${topic}"`,
-        'sort': 'stars',
-        'order': 'desc',
-        'per_page': '100',
-        'page': page.toString()
-      });
-      
-      const headers = {
-        'Accept': 'application/vnd.github.v3+json',
-        'Authorization': `Bearer ${GITHUB_TOKEN}`
-      };
-      
-      const response = await fetch(`${GITHUB_API_SEARCH_URL}?${params}`, { headers });
-      
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(`HTTP error! Status: ${response.status}, Message: ${JSON.stringify(errorData)}`);
+    // Get all repos in the org
+    const all_repos = await getAllOrgRepos(org);
+    // For each repo, fetch topics and filter by topic
+    const reposWithTopic = [];
+    for (const repo of all_repos) {
+      if (repo.private) continue; // skip private repos
+      const repoTopics = await getRepoTopics(org, repo.name);
+      if (repoTopics.map(t => t.toLowerCase()).includes(topic.toLowerCase())) {
+        reposWithTopic.push({ ...repo, topics: repoTopics });
       }
-      
-      const data = await response.json();
-      const public_repos = data.items.filter(repo => !repo.private);
-      all_repos.push(...public_repos);
-      
-      if (data.items.length < 100) {
-        break;
-      }
-      
-      page++;
     }
-    
     // Sort by stars and limit results
-    const top_repos = all_repos
+    const top_repos = reposWithTopic
       .sort((a, b) => b.stargazers_count - a.stargazers_count)
       .slice(0, limit);
-    
     const total_stars = top_repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
     const total_repositories = top_repos.length;
-    
     let all_topics = new Set();
     const formatted_repos = [];
-    
-    // Get topics for each repository
     for (const repo of top_repos) {
-      const repo_name = repo.name;
-      const topics = await getRepoTopics(org, repo_name);
-      topics.forEach(topic => all_topics.add(topic));
-      
+      all_topics = new Set([...all_topics, ...repo.topics]);
       formatted_repos.push({
-        "name": repo_name,
+        "name": repo.name,
         "url": repo.html_url,
         "description": repo.description,
         "stars": repo.stargazers_count,
         "forks": repo.forks_count,
         "is_fork": repo.fork,
-        "topics": topics,
+        "topics": repo.topics,
         "language": repo.language,
         "updated_at": repo.updated_at
       });
     }
-    
     return {
       "top_repositories": formatted_repos,
       "total_stars": total_stars,
