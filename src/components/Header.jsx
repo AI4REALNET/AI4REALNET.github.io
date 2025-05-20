@@ -22,9 +22,12 @@ const Header = ({
   const [isArrowUp, setIsArrowUp] = useState(true);
   const [calendarArrowUp, setCalendarArrowUp] = useState(true);
   
+  // Extract colors from config
+  const { primary, secondary, accent, text, background } = config.colors
+  
   const categories = config.categories && config.categories.length > 0 
     ? config.categories.map(cat => cat.label) 
-    : ['All', 'Energy'];
+    : ['All'];
 
   const handleSearchInputChange = (event) => {
     onSearchChange(event.target.value);
@@ -49,13 +52,55 @@ const Header = ({
     onCategoryChange(category);
   };
 
+  // Style for category buttons
+  const categoryButtonStyle = (isActive) => ({
+    padding: '0.25rem 1rem',
+    fontSize: '0.75rem',
+    fontWeight: '600',
+    borderRadius: '9999px',
+    transition: 'colors 0.3s',
+    backgroundColor: isActive ? primary : background,
+    color: isActive ? 'white' : primary,
+    border: isActive ? 'none' : `1px solid ${primary}`
+  });
+
+  // Style for filter tags
+  const filterTagStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    backgroundColor: primary,
+    color: 'white',
+    padding: '0.25rem 0.75rem',
+    borderRadius: '9999px',
+    marginRight: '0.5rem',
+    marginBottom: '0.5rem'
+  };
+
+  // Gradient text style
+  const gradientTextStyle = {
+    background: `linear-gradient(to right, ${primary}, ${secondary})`,
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    display: 'inline-block'
+  };
+
   return (
-    <header className="bg-white text-black font-mono relative z-10 pt-2 md:p-8">
+    <header style={{
+      backgroundColor: background,
+      color: text,
+      position: 'relative',
+      zIndex: 10,
+      paddingTop: '0.5rem'
+    }} className="font-mono pt-2 md:p-8">
       <div className="flex flex-col items-start ml-6 md:ml-8 mt-8 mb-6">
         <Link to="/">
-          <img src={config.logo} alt={config.organization} className="h-12 md:h-16" />
+          <img src={config.logo} alt={config.organization} className="h-12 md:h-20" />
         </Link>
-        <span className="reverse-gradient-text mt-4 mb-4 text-2xl md:text-4xl">
+        <span 
+          className="mt-4 mb-4 text-2xl md:text-4xl"
+          style={gradientTextStyle}
+        >
           {config.title || "Open Source Software"}
         </span>
         <div className="flex space-x-4">
@@ -63,11 +108,7 @@ const Header = ({
             <button
               key={category}
               onClick={() => handleCategoryChange(category)}
-              className={`px-4 py-1 text-xs font-semibold rounded-full transition-colors duration-300 ${
-                activeCategory === category
-                  ? 'bg-light-blue-2 text-white'
-                  : 'text-dark-blue-2 bg-white border border-dark-blue-2'
-              }`}
+              style={categoryButtonStyle(activeCategory === category)}
             >
               {category}
             </button>
@@ -75,47 +116,65 @@ const Header = ({
         </div>
       </div>
       <div className="flex items-center w-full px-6 md:px-8">
-        <div className="flex-grow flex border border-dark-blue-2 rounded-full overflow-hidden">
+        <div className="flex-grow flex overflow-hidden" style={{
+          border: `1px solid ${primary}`,
+          borderRadius: '9999px'
+        }}>
           <input
             type="text"
-            className="flex-grow ml-6 p-2 bg-white outline-none text-dark-blue-2 placeholder-dark-blue-2"
+            className="flex-grow ml-6 p-2 outline-none"
             placeholder="Search"
             value={searchTerm}
             onChange={handleSearchInputChange}
+            style={{
+              backgroundColor: background,
+              color: text,
+              '::placeholder': { color: text }
+            }}
           />
-          <button className="px-4 py-2 bg-white flex items-center justify-center">
-            <FontAwesomeIcon icon={faSearch} className="text-dark-blue-2" />
+          <button style={{
+            padding: '0.5rem 1rem',
+            backgroundColor: background,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <FontAwesomeIcon icon={faSearch} style={{ color: primary }} />
           </button>
         </div>
         <div className="hidden md:flex items-center ml-4">
-          <span className="text-dark-blue-2">Sort: </span>
+          <span style={{ color: primary }}>Sort: </span>
           <div className="ml-2 flex items-center">
-            <FontAwesomeIcon icon={faStarRegular} className="text-dark-blue-2 text-md ml-2" />
+            <FontAwesomeIcon icon={faStarRegular} style={{ color: primary, marginLeft: '0.5rem' }} />
             <button
               onClick={toggleArrow}
-              className={`focus:outline-none ${
-                sortByRepos ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
+              className="focus:outline-none"
+              style={{ 
+                opacity: sortByRepos ? 0.5 : 1,
+                cursor: sortByRepos ? 'not-allowed' : 'pointer'
+              }}
               disabled={!!sortByRepos}
             >
               <FontAwesomeIcon
                 icon={isArrowUp ? faArrowUp : faArrowDown}
-                className="text-dark-blue-2 text-md ml-1"
+                style={{ color: primary, marginLeft: '0.25rem' }}
               />
             </button>
           </div>
           <div className="ml-2 flex items-center">
-            <FontAwesomeIcon icon={faCodeBranch} className="text-dark-blue-2 text-md ml-2" />
+            <FontAwesomeIcon icon={faCodeBranch} style={{ color: primary, marginLeft: '0.5rem' }} />
             <button
               onClick={toggleCalendarArrow}
-              className={`focus:outline-none ${
-                sortByStars ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
+              className="focus:outline-none"
+              style={{ 
+                opacity: sortByStars ? 0.5 : 1,
+                cursor: sortByStars ? 'not-allowed' : 'pointer'
+              }}
               disabled={!!sortByStars}
             >
               <FontAwesomeIcon
                 icon={calendarArrowUp ? faArrowUp : faArrowDown}
-                className="text-dark-blue-2 text-md ml-1"
+                style={{ color: primary, marginLeft: '0.25rem' }}
               />
             </button>
           </div>
@@ -125,12 +184,12 @@ const Header = ({
         {activeFilters.map((filter, index) => (
           <div
             key={index}
-            className="flex items-center bg-light-blue-2 text-white px-3 py-1 rounded-full mr-2 mb-2"
+            style={filterTagStyle}
           >
             <span>{filter}</span>
             <FontAwesomeIcon
               icon={faTimes}
-              className="ml-2 cursor-pointer"
+              style={{ marginLeft: '0.5rem', cursor: 'pointer' }}
               onClick={() => onRemoveTag(filter)}
             />
           </div>

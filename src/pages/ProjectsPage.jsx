@@ -135,9 +135,6 @@ const ProjectsPage = () => {
   return (
     <>
       <div className="min-h-screen flex flex-col bg-white font-mono relative">
-        <img src={image} alt={config.organization} className="absolute top-0 left-0 w-full h-auto z-0" />
-  
-        {/* Fade-in Navbar */}
         <ScrollNavbar />
 
         {/* Main content */}

@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom'; 
 import config from '../config';
 
 const ScrollNavbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [logoError, setLogoError] = useState(false);
   const location = useLocation();
   const navigate = useNavigate(); 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowNavbar(window.scrollY > 50); 
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    window.scrollTo(0, 0); 
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [location]); 
+  // Extract colors from config
+  const { primary, secondary, accent, text, background } = config.colors
 
   const handleLinkClick = (targetPath) => {
     navigate(targetPath);
@@ -27,33 +17,45 @@ const ScrollNavbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-20 shadow-md transition-opacity duration-300 ${
-        showNavbar ? 'opacity-100' : 'opacity-0'
-      } bg-white navbar-large`}
+      className="fixed top-0 left-0 w-full z-20 shadow-md"
+      style={{ backgroundColor: background }}
     >
       <nav className="flex justify-between items-center p-8">
         <div className="flex items-end">
           <Link to="/">
-            <img 
-              src={config.logo || "/logo.png"} 
-              alt={`${config.organization} Logo`} 
-              className="h-8 w-auto md:h-10 w-auto"
-              onError={(e) => {
-                console.warn('Logo failed to load, using text fallback');
-                e.target.style.display = 'none';
-              }}
-            />
+            {!logoError ? (
+              <img 
+                src={config.logo || "/logo.png"} 
+                alt={`${config.organization} Logo`} 
+                className="h-8 w-auto md:h-12 w-auto"
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <span 
+                className="text-xl md:text-2xl font-bold"
+                style={{ color: primary }}
+              >
+                {config.organization}
+              </span>
+            )}
           </Link>
-          <span className="hidden md:block ml-3 text-dark-blue-2 font-bold text-xl self-end">OSS</span>
+          <span 
+            className="hidden md:block ml-3 font-bold text-xl self-end"
+            style={{ color: primary }}
+          >
+            OSS
+          </span>
         </div>
         
-        <ul className="flex items-center space-x-4 text-dark-blue-2 font-semibold text-lg">
+        <ul className="flex items-center space-x-4 font-semibold text-lg">
           <li>
             <button
               onClick={() => handleLinkClick('/projects')} 
-              className={`pb-2 ${
-                location.pathname === '/projects' ? 'border-b-2 border-dark-blue-2' : ''
-              }`}
+              className="pb-2"
+              style={{ 
+                color: text,
+                borderBottom: location.pathname === '/projects' ? `2px solid ${secondary}` : 'none'
+              }}
             >
               Projects
             </button>
