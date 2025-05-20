@@ -26,12 +26,26 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: python scripts/update_projects.py
 
+    - name: Check for changes
+      id: git_status
+      run: |
+        git diff --quiet public/projects.json || echo "changes=true" >> $GITHUB_OUTPUT
+      
     - name: Commit and push changes if needed
+      if: steps.git_status.outputs.changes == 'true'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git diff --exit-code || (git add public/projects.json && git commit -m 'Update projects.json with latest GitHub data' && \
-        git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/AI4REALNET/.github.io.git && \
-        git push)
+        git add public/projects.json
+        git commit -m 'Update projects.json with latest GitHub data'
+        git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/AI4REALNET/.github.io.git
+        git push
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        
+    - name: Trigger deployment workflow
+      if: steps.git_status.outputs.changes == 'true'
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+        event-type: update-project-data

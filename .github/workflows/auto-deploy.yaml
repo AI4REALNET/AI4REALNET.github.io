@@ -3,6 +3,8 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  repository_dispatch:
+    types: [update-project-data]
 
 jobs:
   build-and-deploy:
@@ -36,4 +38,4 @@ jobs:
         with:
           folder: dist
           branch: gh-pages  
-          clean: true       
+          clean: true
