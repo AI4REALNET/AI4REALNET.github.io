@@ -10,49 +10,36 @@
       {
         "name": "flatland-rl",
         "url": "https://github.com/AI4REALNET/flatland-rl",
-        "description": "The Flatland Framework is a multi-purpose environment to tackle problems around resilient resource allocation under uncertainty. It is designed to be a flexible and method agnostic to solve a wide range of problems in the field of operations research and reinforcement learning.",
         "stars": 0,
-        "forks": 0,
         "is_fork": true,
         "topics": [
           "flatland"
-        ],
-        "language": "Jupyter Notebook",
-        "updated_at": "2025-05-07T14:57:52Z"
+        ]
       },
       {
         "name": "flatland-book",
         "url": "https://github.com/AI4REALNET/flatland-book",
-        "description": "This repository is an aggregation of all the documentation, exploratory research, baselines, un-explored ideas, future research directions for the Flatland-RL (https://github.com/flatland-association/flatland-rl) project.",
         "stars": 0,
-        "forks": 0,
         "is_fork": true,
         "topics": [
           "flatland"
-        ],
-        "language": "Jupyter Notebook",
-        "updated_at": "2025-05-07T14:57:03Z"
+        ]
       },
       {
         "name": "flatland-scenarios",
         "url": "https://github.com/AI4REALNET/flatland-scenarios",
-        "description": "Flatland scenarios",
         "stars": 0,
-        "forks": 0,
         "is_fork": true,
         "topics": [
           "flatland"
-        ],
-        "language": "Jupyter Notebook",
-        "updated_at": "2025-05-07T14:57:43Z"
+        ]
       }
     ],
     "total_stars": 0,
     "total_repositories": 3,
     "project_tags": [
       "flatland"
-    ],
-    "last_updated": "2025-05-20T14:07:41.863Z"
+    ]
   },
   {
     "project_name": "Grid2Op",
@@ -65,49 +52,36 @@
       {
         "name": "pypowsybl2grid",
         "url": "https://github.com/AI4REALNET/pypowsybl2grid",
-        "description": "An integration between Grid2op and PyPowSybl",
         "stars": 0,
-        "forks": 0,
         "is_fork": true,
         "topics": [
           "grid2op"
-        ],
-        "language": null,
-        "updated_at": "2025-05-20T10:00:33Z"
+        ]
       },
       {
         "name": "grid2op",
         "url": "https://github.com/AI4REALNET/grid2op",
-        "description": "Grid2Op a testbed platform to model sequential decision making in power systems.",
         "stars": 0,
-        "forks": 0,
         "is_fork": true,
         "topics": [
           "grid2op"
-        ],
-        "language": null,
-        "updated_at": "2025-05-20T10:00:22Z"
+        ]
       },
       {
         "name": "grid2op-scenario",
         "url": "https://github.com/AI4REALNET/grid2op-scenario",
-        "description": null,
         "stars": 0,
-        "forks": 1,
         "is_fork": false,
         "topics": [
           "grid2op"
-        ],
-        "language": "Python",
-        "updated_at": "2025-05-20T09:59:58Z"
+        ]
       }
     ],
     "total_stars": 0,
     "total_repositories": 3,
     "project_tags": [
       "grid2op"
-    ],
-    "last_updated": "2025-05-20T14:07:49.439Z"
+    ]
   },
   {
     "project_name": "BlueSky",
@@ -118,38 +92,29 @@
     "project_website": "https://ai.inesctec.pt",
     "top_repositories": [
       {
-        "name": "bluesky-gym",
-        "url": "https://github.com/AI4REALNET/bluesky-gym",
-        "description": "A gymnasium style environment for standardized Reinforcement Learning research in Air Traffic Management. Built on the BlueSky Air Traffic Simulator ",
-        "stars": 0,
-        "forks": 0,
-        "is_fork": true,
-        "topics": [
-          "bluesky"
-        ],
-        "language": "Python",
-        "updated_at": "2025-05-20T10:00:51Z"
-      },
-      {
         "name": "bluesky",
         "url": "https://github.com/AI4REALNET/bluesky",
-        "description": "The open source air traffic simulator",
         "stars": 0,
-        "forks": 0,
         "is_fork": true,
         "topics": [
           "bluesky"
-        ],
-        "language": "Python",
-        "updated_at": "2025-05-20T10:01:01Z"
+        ]
+      },
+      {
+        "name": "bluesky-gym",
+        "url": "https://github.com/AI4REALNET/bluesky-gym",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "bluesky"
+        ]
       }
     ],
     "total_stars": 0,
     "total_repositories": 2,
     "project_tags": [
       "bluesky"
-    ],
-    "last_updated": "2025-05-20T14:07:56.812Z"
+    ]
   },
   {
     "project_name": "Interactive AI",
@@ -162,22 +127,17 @@
       {
         "name": "InteractiveAI",
         "url": "https://github.com/AI4REALNET/InteractiveAI",
-        "description": "Interactive AI Assistant Platform for Real-time Operations",
         "stars": 0,
-        "forks": 2,
         "is_fork": true,
         "topics": [
           "interactive-ai"
-        ],
-        "language": "Python",
-        "updated_at": "2025-05-20T10:01:13Z"
+        ]
       }
     ],
     "total_stars": 0,
     "total_repositories": 1,
     "project_tags": [
       "interactive-ai"
-    ],
-    "last_updated": "2025-05-20T14:08:04.191Z"
+    ]
   }
 ]
