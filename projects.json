@@ -219,10 +219,22 @@
     "project_description": "Evaluation of different models to predict the failure of AI agents in power systems tasks.",
     "project_url": "",
     "project_website": "",
-    "top_repositories": [],
+    "top_repositories": [
+      {
+        "name": "failure_prediction",
+        "url": "https://github.com/AI4REALNET/failure_prediction",
+        "stars": 0,
+        "is_fork": false,
+        "topics": [
+          "failure-prediction"
+        ]
+      }
+    ],
     "total_stars": 0,
-    "total_repositories": 0,
-    "project_tags": []
+    "total_repositories": 1,
+    "project_tags": [
+      "failure-prediction"
+    ]
   },
   {
     "project_name": "Maze Flatland",
@@ -246,6 +258,32 @@
     "total_repositories": 1,
     "project_tags": [
       "maze-flatland"
+    ]
+  },
+  {
+    "project_name": "Neural Prioritized Planning",
+    "project_topic": "neural-prioritized-planning",
+    "project_area": "Artificial Intelligence",
+    "project_description": "This repository implements two solvers, Conflict-Based Search (CBS) and Prioritized Planning (PP)",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "flatland-blackbox",
+        "url": "https://github.com/AI4REALNET/flatland-blackbox",
+        "stars": 0,
+        "is_fork": false,
+        "topics": [
+          "flatland",
+          "neural-prioritized-planning"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "flatland",
+      "neural-prioritized-planning"
     ]
   }
 ]

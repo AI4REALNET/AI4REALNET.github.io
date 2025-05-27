@@ -70,5 +70,13 @@
       "project_description": "Maze-Flatland wraps and extends the flatland-rl environment in maze-rl, making it a powerful AI training ground.",
       "project_url": "",
       "project_website": ""
+    },
+    {
+      "project_name": "Neural Prioritized Planning",
+      "project_topic": "neural-prioritized-planning",
+      "project_area": "Artificial Intelligence",
+      "project_description": "This repository implements two solvers, Conflict-Based Search (CBS) and Prioritized Planning (PP)",
+      "project_url": "",
+      "project_website": ""
     }
   ]
