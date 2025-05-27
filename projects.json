@@ -4,8 +4,8 @@
     "project_topic": "flatland",
     "project_area": "Energy",
     "project_description": "Advanced energy management systems for smart grids and renewable energy integration.",
-    "project_url": "https://example.com/energy-management",
-    "project_website": "https://energy.inesctec.pt",
+    "project_url": "https://www.flatland-association.org/",
+    "project_website": "https://www.flatland-association.org/",
     "top_repositories": [
       {
         "name": "flatland-rl",
@@ -44,10 +44,10 @@
   {
     "project_name": "Grid2Op",
     "project_topic": "grid2op",
-    "project_area": "Artificial Intelligence",
+    "project_area": "Energy",
     "project_description": "Cutting-edge machine learning research and applications for industrial use cases.",
-    "project_url": "https://example.com/ml-research",
-    "project_website": "https://ai.inesctec.pt",
+    "project_url": "https://lfenergy.org/projects/grid2op/",
+    "project_website": "https://lfenergy.org/projects/grid2op/",
     "top_repositories": [
       {
         "name": "pypowsybl2grid",
@@ -59,19 +59,19 @@
         ]
       },
       {
-        "name": "grid2op",
-        "url": "https://github.com/AI4REALNET/grid2op",
+        "name": "grid2op-scenario",
+        "url": "https://github.com/AI4REALNET/grid2op-scenario",
         "stars": 0,
-        "is_fork": true,
+        "is_fork": false,
         "topics": [
           "grid2op"
         ]
       },
       {
-        "name": "grid2op-scenario",
-        "url": "https://github.com/AI4REALNET/grid2op-scenario",
+        "name": "grid2op",
+        "url": "https://github.com/AI4REALNET/grid2op",
         "stars": 0,
-        "is_fork": false,
+        "is_fork": true,
         "topics": [
           "grid2op"
         ]
@@ -88,8 +88,8 @@
     "project_topic": "bluesky",
     "project_area": "Internet of Things",
     "project_description": "Advanced sensor networks for IoT applications and smart environments.",
-    "project_url": "https://example.com/iot-sensors",
-    "project_website": "https://ai.inesctec.pt",
+    "project_url": "https://www.tudelft.nl/en/stories/articles/open-data-is-taking-off-in-aviation-thanks-to-bluesky",
+    "project_website": "https://www.tudelft.nl/en/stories/articles/open-data-is-taking-off-in-aviation-thanks-to-bluesky",
     "top_repositories": [
       {
         "name": "bluesky",
@@ -119,10 +119,10 @@
   {
     "project_name": "Interactive AI",
     "project_topic": "interactive-ai",
-    "project_area": "Robotics",
+    "project_area": "Energy",
     "project_description": "Research on autonomous robotic systems for industry and healthcare.",
-    "project_url": "https://example.com/robotics",
-    "project_website": "https://robotics.inesctec.pt",
+    "project_url": "",
+    "project_website": "",
     "top_repositories": [
       {
         "name": "InteractiveAI",
@@ -138,6 +138,114 @@
     "total_repositories": 1,
     "project_tags": [
       "interactive-ai"
+    ]
+  },
+  {
+    "project_name": "Human Assessment Module",
+    "project_topic": "human-assessment-module",
+    "project_area": "Health",
+    "project_description": "A module designed to personalize the prediction model for each individual, estimating their cognitive performance based on their electrocardiogram (ECG) signal.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "d2.2-human-assessment-module-v0.5",
+        "url": "https://github.com/AI4REALNET/d2.2-human-assessment-module-v0.5",
+        "stars": 0,
+        "is_fork": false,
+        "topics": [
+          "human-assessment-module"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "human-assessment-module"
+    ]
+  },
+  {
+    "project_name": "Graph Neural Solver",
+    "project_topic": "graph-neural-solver",
+    "project_area": "Energy",
+    "project_description": "Graph Neural Networks for Power Flow (PF) simulation.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "T2.1_graph_neural_solver",
+        "url": "https://github.com/AI4REALNET/T2.1_graph_neural_solver",
+        "stars": 1,
+        "is_fork": false,
+        "topics": [
+          "graph-neural-solver"
+        ]
+      }
+    ],
+    "total_stars": 1,
+    "total_repositories": 1,
+    "project_tags": [
+      "graph-neural-solver"
+    ]
+  },
+  {
+    "project_name": "Distributed Reinforcement Learning",
+    "project_topic": "distributed-rl",
+    "project_area": "Artificial Intelligence",
+    "project_description": "Distributed Reinforcement Learning.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "distributed_rl",
+        "url": "https://github.com/AI4REALNET/distributed_rl",
+        "stars": 0,
+        "is_fork": false,
+        "topics": [
+          "distributed-rl"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "distributed-rl"
+    ]
+  },
+  {
+    "project_name": "Failure Prediction of AI Agents",
+    "project_topic": "failure-prediction",
+    "project_area": "Energy",
+    "project_description": "Evaluation of different models to predict the failure of AI agents in power systems tasks.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [],
+    "total_stars": 0,
+    "total_repositories": 0,
+    "project_tags": []
+  },
+  {
+    "project_name": "Maze Flatland",
+    "project_topic": "maze-flatland",
+    "project_area": "Artificial Intelligence",
+    "project_description": "Maze-Flatland wraps and extends the flatland-rl environment in maze-rl, making it a powerful AI training ground.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "maze-flatland",
+        "url": "https://github.com/AI4REALNET/maze-flatland",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "maze-flatland"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "maze-flatland"
     ]
   }
 ]
