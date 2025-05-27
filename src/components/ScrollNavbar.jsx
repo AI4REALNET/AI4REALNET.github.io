@@ -46,21 +46,7 @@ const ScrollNavbar = () => {
             OSS
           </span>
         </div>
-        
-        <ul className="flex items-center space-x-4 font-semibold text-lg">
-          <li>
-            <button
-              onClick={() => handleLinkClick('/projects')} 
-              className="pb-2"
-              style={{ 
-                color: text,
-                borderBottom: location.pathname === '/projects' ? `2px solid ${secondary}` : 'none'
-              }}
-            >
-              Projects
-            </button>
-          </li>
-        </ul>
+
       </nav>
     </div>
   );
