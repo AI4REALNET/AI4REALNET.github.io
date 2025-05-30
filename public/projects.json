@@ -2,8 +2,8 @@
   {
     "project_name": "Flatland",
     "project_topic": "flatland",
-    "project_area": "Energy",
-    "project_description": "Advanced energy management systems for smart grids and renewable energy integration.",
+    "project_area": "Railway",
+    "project_description": "Multi-purpose environment to tackle problems around resilient resource allocation under uncertainty.",
     "project_url": "https://www.flatland-association.org/",
     "project_website": "https://www.flatland-association.org/",
     "top_repositories": [
@@ -50,19 +50,19 @@
     "project_website": "https://lfenergy.org/projects/grid2op/",
     "top_repositories": [
       {
-        "name": "pypowsybl2grid",
-        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
+        "name": "grid2op-scenario",
+        "url": "https://github.com/AI4REALNET/grid2op-scenario",
         "stars": 0,
-        "is_fork": true,
+        "is_fork": false,
         "topics": [
           "grid2op"
         ]
       },
       {
-        "name": "grid2op-scenario",
-        "url": "https://github.com/AI4REALNET/grid2op-scenario",
+        "name": "pypowsybl2grid",
+        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
         "stars": 0,
-        "is_fork": false,
+        "is_fork": true,
         "topics": [
           "grid2op"
         ]
@@ -92,8 +92,8 @@
     "project_website": "https://www.tudelft.nl/en/stories/articles/open-data-is-taking-off-in-aviation-thanks-to-bluesky",
     "top_repositories": [
       {
-        "name": "bluesky",
-        "url": "https://github.com/AI4REALNET/bluesky",
+        "name": "bluesky-gym",
+        "url": "https://github.com/AI4REALNET/bluesky-gym",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -101,8 +101,8 @@
         ]
       },
       {
-        "name": "bluesky-gym",
-        "url": "https://github.com/AI4REALNET/bluesky-gym",
+        "name": "bluesky",
+        "url": "https://github.com/AI4REALNET/bluesky",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -127,14 +127,14 @@
       {
         "name": "InteractiveAI",
         "url": "https://github.com/AI4REALNET/InteractiveAI",
-        "stars": 0,
+        "stars": 1,
         "is_fork": true,
         "topics": [
           "interactive-ai"
         ]
       }
     ],
-    "total_stars": 0,
+    "total_stars": 1,
     "total_repositories": 1,
     "project_tags": [
       "interactive-ai"
@@ -151,14 +151,14 @@
       {
         "name": "d2.2-human-assessment-module-v0.5",
         "url": "https://github.com/AI4REALNET/d2.2-human-assessment-module-v0.5",
-        "stars": 0,
+        "stars": 1,
         "is_fork": false,
         "topics": [
           "human-assessment-module"
         ]
       }
     ],
-    "total_stars": 0,
+    "total_stars": 1,
     "total_repositories": 1,
     "project_tags": [
       "human-assessment-module"
