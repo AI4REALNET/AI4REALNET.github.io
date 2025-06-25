@@ -17,8 +17,8 @@
         ]
       },
       {
-        "name": "flatland-book",
-        "url": "https://github.com/AI4REALNET/flatland-book",
+        "name": "flatland-scenarios",
+        "url": "https://github.com/AI4REALNET/flatland-scenarios",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -26,8 +26,8 @@
         ]
       },
       {
-        "name": "flatland-scenarios",
-        "url": "https://github.com/AI4REALNET/flatland-scenarios",
+        "name": "flatland-book",
+        "url": "https://github.com/AI4REALNET/flatland-book",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -127,14 +127,14 @@
       {
         "name": "InteractiveAI",
         "url": "https://github.com/AI4REALNET/InteractiveAI",
-        "stars": 0,
+        "stars": 2,
         "is_fork": true,
         "topics": [
           "interactive-ai"
         ]
       }
     ],
-    "total_stars": 0,
+    "total_stars": 2,
     "total_repositories": 1,
     "project_tags": [
       "interactive-ai"
@@ -151,14 +151,14 @@
       {
         "name": "d2.2-human-assessment-module-v0.5",
         "url": "https://github.com/AI4REALNET/d2.2-human-assessment-module-v0.5",
-        "stars": 0,
+        "stars": 1,
         "is_fork": false,
         "topics": [
           "human-assessment-module"
         ]
       }
     ],
-    "total_stars": 0,
+    "total_stars": 1,
     "total_repositories": 1,
     "project_tags": [
       "human-assessment-module"
