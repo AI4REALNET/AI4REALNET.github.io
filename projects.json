@@ -8,8 +8,8 @@
     "project_website": "https://www.flatland-association.org/",
     "top_repositories": [
       {
-        "name": "flatland-rl",
-        "url": "https://github.com/AI4REALNET/flatland-rl",
+        "name": "flatland-scenarios",
+        "url": "https://github.com/AI4REALNET/flatland-scenarios",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -26,8 +26,13 @@
         ]
       },
       {
+<<<<<<< HEAD
+        "name": "flatland-rl",
+        "url": "https://github.com/AI4REALNET/flatland-rl",
+=======
         "name": "flatland-book",
         "url": "https://github.com/AI4REALNET/flatland-book",
+>>>>>>> 24080dcb55e58ac2dd59d784e43d41e852e0344d
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -68,10 +73,10 @@
         ]
       },
       {
-        "name": "grid2op",
-        "url": "https://github.com/AI4REALNET/grid2op",
+        "name": "grid2evaluate",
+        "url": "https://github.com/AI4REALNET/grid2evaluate",
         "stars": 0,
-        "is_fork": true,
+        "is_fork": false,
         "topics": [
           "grid2op"
         ]
@@ -92,8 +97,8 @@
     "project_website": "https://www.tudelft.nl/en/stories/articles/open-data-is-taking-off-in-aviation-thanks-to-bluesky",
     "top_repositories": [
       {
-        "name": "bluesky",
-        "url": "https://github.com/AI4REALNET/bluesky",
+        "name": "ATMSectorization",
+        "url": "https://github.com/AI4REALNET/ATMSectorization",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -108,10 +113,19 @@
         "topics": [
           "bluesky"
         ]
+      },
+      {
+        "name": "bluesky",
+        "url": "https://github.com/AI4REALNET/bluesky",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "bluesky"
+        ]
       }
     ],
     "total_stars": 0,
-    "total_repositories": 2,
+    "total_repositories": 3,
     "project_tags": [
       "bluesky"
     ]
@@ -149,8 +163,13 @@
     "project_website": "",
     "top_repositories": [
       {
+<<<<<<< HEAD
+        "name": "Human-Assessment-Module",
+        "url": "https://github.com/AI4REALNET/Human-Assessment-Module",
+=======
         "name": "d2.2-human-assessment-module-v0.5",
         "url": "https://github.com/AI4REALNET/d2.2-human-assessment-module-v0.5",
+>>>>>>> 24080dcb55e58ac2dd59d784e43d41e852e0344d
         "stars": 1,
         "is_fork": false,
         "topics": [
