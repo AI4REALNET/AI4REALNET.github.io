@@ -46,7 +46,14 @@ const ScrollNavbar = () => {
             OSS
           </span>
         </div>
-
+        <div className="flex items-center ml-auto" style={{ maxWidth: '25%', textAlign: 'right' }}>
+          <img 
+            src={"/eu_funding.png"} 
+            alt="EU Funding" 
+            className="h-auto w-full max-w-xs md:max-w-sm"
+            style={{ objectFit: 'contain' }}
+          />
+        </div>
       </nav>
     </div>
   );
