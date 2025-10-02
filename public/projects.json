@@ -8,6 +8,15 @@
     "project_website": "https://www.flatland-association.org/",
     "top_repositories": [
       {
+        "name": "flatland-rl",
+        "url": "https://github.com/AI4REALNET/flatland-rl",
+        "stars": 1,
+        "is_fork": true,
+        "topics": [
+          "flatland"
+        ]
+      },
+      {
         "name": "flatland-scenarios",
         "url": "https://github.com/AI4REALNET/flatland-scenarios",
         "stars": 0,
@@ -17,17 +26,8 @@
         ]
       },
       {
-        "name": "flatland-book",
-        "url": "https://github.com/AI4REALNET/flatland-book",
-        "stars": 0,
-        "is_fork": true,
-        "topics": [
-          "flatland"
-        ]
-      },
-      {
-        "name": "flatland-rl",
-        "url": "https://github.com/AI4REALNET/flatland-rl",
+        "name": "flatland-baselines",
+        "url": "https://github.com/AI4REALNET/flatland-baselines",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -35,7 +35,7 @@
         ]
       }
     ],
-    "total_stars": 0,
+    "total_stars": 1,
     "total_repositories": 3,
     "project_tags": [
       "flatland"
@@ -50,15 +50,6 @@
     "project_website": "https://lfenergy.org/projects/grid2op/",
     "top_repositories": [
       {
-        "name": "pypowsybl2grid",
-        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
-        "stars": 0,
-        "is_fork": true,
-        "topics": [
-          "grid2op"
-        ]
-      },
-      {
         "name": "grid2op-scenario",
         "url": "https://github.com/AI4REALNET/grid2op-scenario",
         "stars": 0,
@@ -68,10 +59,19 @@
         ]
       },
       {
-        "name": "grid2evaluate",
-        "url": "https://github.com/AI4REALNET/grid2evaluate",
+        "name": "grid2op",
+        "url": "https://github.com/AI4REALNET/grid2op",
         "stars": 0,
-        "is_fork": false,
+        "is_fork": true,
+        "topics": [
+          "grid2op"
+        ]
+      },
+      {
+        "name": "pypowsybl2grid",
+        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
+        "stars": 0,
+        "is_fork": true,
         "topics": [
           "grid2op"
         ]
@@ -141,10 +141,19 @@
         "topics": [
           "interactive-ai"
         ]
+      },
+      {
+        "name": "InteractiveAI-API",
+        "url": "https://github.com/AI4REALNET/InteractiveAI-API",
+        "stars": 0,
+        "is_fork": false,
+        "topics": [
+          "interactive-ai"
+        ]
       }
     ],
     "total_stars": 2,
-    "total_repositories": 1,
+    "total_repositories": 2,
     "project_tags": [
       "interactive-ai"
     ]
@@ -291,8 +300,32 @@
     "total_stars": 0,
     "total_repositories": 1,
     "project_tags": [
-      "neural-prioritized-planning",
-      "flatland"
+      "flatland",
+      "neural-prioritized-planning"
+    ]
+  },
+  {
+    "project_name": "Campaign Hub Orchestrator",
+    "project_topic": "campaign-hub-orchestrator",
+    "project_area": "Artificial Intelligence",
+    "project_description": "Campaign Hub Orchestrator that integrates with the Validation Campaign Hub (FAB) and provides domain-specific orchestrator and test runner implementations.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "ai4realnet-orchestrators",
+        "url": "https://github.com/AI4REALNET/ai4realnet-orchestrators",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "campaign-hub-orchestrator"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "campaign-hub-orchestrator"
     ]
   }
 ]

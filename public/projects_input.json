@@ -78,5 +78,13 @@
       "project_description": "This repository implements two solvers, Conflict-Based Search (CBS) and Prioritized Planning (PP)",
       "project_url": "",
       "project_website": ""
+    },
+    {
+      "project_name": "Campaign Hub Orchestrator",
+      "project_topic": "campaign-hub-orchestrator",
+      "project_area": "Artificial Intelligence",
+      "project_description": "Campaign Hub Orchestrator that integrates with the Validation Campaign Hub (FAB) and provides domain-specific orchestrator and test runner implementations.",
+      "project_url": "",
+      "project_website": ""
     }
   ]
