@@ -171,7 +171,7 @@ const ProjectCard = ({ project, onTagClick }) => {
                 rel="noreferrer"
                 style={linkStyle}
               >
-                Project Website
+                Link
               </a>
             ) : (
               <span className="block h-6"></span>
@@ -305,7 +305,7 @@ const ProjectCard = ({ project, onTagClick }) => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Project Website
+                Link
               </a>
             ) : (
               <span className="block h-6"></span>

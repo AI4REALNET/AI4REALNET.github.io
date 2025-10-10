@@ -3,7 +3,7 @@
       "project_name": "Flatland",
       "project_topic": "flatland",
       "project_area": "Railway",
-      "project_description": "Multi-purpose environment to tackle problems around resilient resource allocation under uncertainty.",
+      "project_description": "Multi-purpose digital environment for developing and comparing Multi Agent Reinforcement Learning algorithms.",
       "project_url": "https://www.flatland-association.org/",
       "project_website": "https://www.flatland-association.org/"
     },
@@ -11,7 +11,7 @@
       "project_name": "Grid2Op",
       "project_topic": "grid2op",
       "project_area": "Energy",
-      "project_description": "Cutting-edge machine learning research and applications for industrial use cases.",
+      "project_description": "Digital environment for intelligent power grid control.",
       "project_url": "https://lfenergy.org/projects/grid2op/",
       "project_website": "https://lfenergy.org/projects/grid2op/"
     },
@@ -19,7 +19,7 @@
       "project_name": "BlueSky",
       "project_topic": "bluesky",
       "project_area": "Internet of Things",
-      "project_description": "Advanced sensor networks for IoT applications and smart environments.",
+      "project_description": "Digital environment  for developing and comparing AI-based systems for air traffic management and air traffic flows.",
       "project_url": "https://www.tudelft.nl/en/stories/articles/open-data-is-taking-off-in-aviation-thanks-to-bluesky",
       "project_website": "https://www.tudelft.nl/en/stories/articles/open-data-is-taking-off-in-aviation-thanks-to-bluesky"
     },
@@ -27,7 +27,7 @@
       "project_name": "Interactive AI",
       "project_topic": "interactive-ai",
       "project_area": "Energy",
-      "project_description": "Research on autonomous robotic systems for industry and healthcare.",
+      "project_description": "Bi-directional virtual assistant for human-AI interaction.",
       "project_url": "",
       "project_website": ""
     },
