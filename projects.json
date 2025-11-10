@@ -10,7 +10,7 @@
       {
         "name": "flatland-rl",
         "url": "https://github.com/AI4REALNET/flatland-rl",
-        "stars": 1,
+        "stars": 2,
         "is_fork": true,
         "topics": [
           "flatland"
@@ -19,26 +19,28 @@
       {
         "name": "flatland-book",
         "url": "https://github.com/AI4REALNET/flatland-book",
-        "stars": 0,
+        "stars": 1,
         "is_fork": true,
         "topics": [
           "flatland"
         ]
       },
       {
-        "name": "flatland-scenarios",
-        "url": "https://github.com/AI4REALNET/flatland-scenarios",
-        "stars": 0,
-        "is_fork": true,
+        "name": "flatland-blackbox",
+        "url": "https://github.com/AI4REALNET/flatland-blackbox",
+        "stars": 1,
+        "is_fork": false,
         "topics": [
-          "flatland"
+          "flatland",
+          "neural-prioritized-planning"
         ]
       }
     ],
-    "total_stars": 1,
+    "total_stars": 4,
     "total_repositories": 3,
     "project_tags": [
-      "flatland"
+      "flatland",
+      "neural-prioritized-planning"
     ]
   },
   {
@@ -59,8 +61,8 @@
         ]
       },
       {
-        "name": "pypowsybl2grid",
-        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
+        "name": "grid2op",
+        "url": "https://github.com/AI4REALNET/grid2op",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -68,8 +70,8 @@
         ]
       },
       {
-        "name": "grid2op",
-        "url": "https://github.com/AI4REALNET/grid2op",
+        "name": "pypowsybl2grid",
+        "url": "https://github.com/AI4REALNET/pypowsybl2grid",
         "stars": 0,
         "is_fork": true,
         "topics": [
@@ -136,7 +138,7 @@
       {
         "name": "InteractiveAI",
         "url": "https://github.com/AI4REALNET/InteractiveAI",
-        "stars": 2,
+        "stars": 3,
         "is_fork": true,
         "topics": [
           "interactive-ai"
@@ -152,7 +154,7 @@
         ]
       }
     ],
-    "total_stars": 2,
+    "total_stars": 3,
     "total_repositories": 2,
     "project_tags": [
       "interactive-ai"
@@ -289,7 +291,7 @@
       {
         "name": "flatland-blackbox",
         "url": "https://github.com/AI4REALNET/flatland-blackbox",
-        "stars": 0,
+        "stars": 1,
         "is_fork": false,
         "topics": [
           "flatland",
@@ -297,7 +299,7 @@
         ]
       }
     ],
-    "total_stars": 0,
+    "total_stars": 1,
     "total_repositories": 1,
     "project_tags": [
       "flatland",
@@ -326,6 +328,30 @@
     "total_repositories": 1,
     "project_tags": [
       "campaign-hub-orchestrator"
+    ]
+  },
+  {
+    "project_name": "Human\u2013Machine Interaction Surveys",
+    "project_topic": "hmi-surveys",
+    "project_area": "Artificial Intelligence",
+    "project_description": "A modular, privacy-friendly HTML framework for validated and customizable human\u2013machine interaction surveys with local data storage and unified result aggregation.",
+    "project_url": "",
+    "project_website": "",
+    "top_repositories": [
+      {
+        "name": "hmisurveys",
+        "url": "https://github.com/AI4REALNET/hmisurveys",
+        "stars": 0,
+        "is_fork": true,
+        "topics": [
+          "hmi-surveys"
+        ]
+      }
+    ],
+    "total_stars": 0,
+    "total_repositories": 1,
+    "project_tags": [
+      "hmi-surveys"
     ]
   }
 ]
