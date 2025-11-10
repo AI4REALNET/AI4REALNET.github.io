@@ -86,5 +86,13 @@
       "project_description": "Campaign Hub Orchestrator that integrates with the Validation Campaign Hub (FAB) and provides domain-specific orchestrator and test runner implementations.",
       "project_url": "",
       "project_website": ""
+    },
+    {
+      "project_name": "Human–Machine Interaction Surveys",
+      "project_topic": "hmi-surveys",
+      "project_area": "Artificial Intelligence",
+      "project_description": "A modular, privacy-friendly HTML framework for validated and customizable human–machine interaction surveys with local data storage and unified result aggregation.",
+      "project_url": "",
+      "project_website": ""
     }
   ]
